@@ -6,7 +6,7 @@
 /*   By: hbaddrul <hbaddrul@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 19:03:16 by hbaddrul          #+#    #+#             */
-/*   Updated: 2022/02/03 00:51:23 by hbaddrul         ###   ########.fr       */
+/*   Updated: 2022/02/08 00:35:34 by hbaddrul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ Fixed::Fixed(const int raw) : raw_(raw << NUM_FRACTIONAL_BITS_) {
 }
 
 Fixed::Fixed(const float raw)
-    : raw_(roundf(raw * (1 << NUM_FRACTIONAL_BITS_))) {
+        : raw_(roundf(raw * (1 << NUM_FRACTIONAL_BITS_))) {
     cout << "Float constructor called" << endl;
 }
 
